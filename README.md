@@ -30,7 +30,7 @@
 
 # My Portfolio <a name="#about-project"></a>
 
-**My-portfolio-react** Is a react-redux page of my portfolio showing my achievements, past and current projects. Contact me for inquiries or collaborations using the provided information. 
+**My-portfolio-react** Is a react-redux page of my portfolio showing my achievements, past and current projects, and personal contact information. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
