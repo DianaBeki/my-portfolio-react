@@ -6,7 +6,7 @@ import Hero from '../assets/Hero.png';
 const Home = () => (
   <div name="home" className="bg-gradient-to-b from-[#0F0F0F] to-[#232D3F] px-[1rem] md:px-[2rem] mx-auto pb-[2rem] lg:pb-[8rem]">
     <div className="flex flex-col md:flex-row items-center justify-center pt-[9rem] md:pt-[7rem] mx-auto">
-      <div className="hidden md:flex w-[620px] h-[380px] lg:ml-[4rem]">
+      <div className="hidden md:flex w-[620px] h-[380px]">
         <img src={Hero} alt="Pic" className="rounded-b-[100%] object-cover" />
       </div>
       <div className="flex flex-col justify-center gap-2 md:gap-6 md:ml-3 lg:ml-6">
