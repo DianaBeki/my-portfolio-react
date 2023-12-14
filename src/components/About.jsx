@@ -36,7 +36,34 @@ const About = () => (
       </div>
       <div className="flex-1">
         <p className="text-[#FFF7D4] text-[1.2rem] lg:text-[1.3rem]">
-          Passionate about technology, I'm a coding explorer venturing into the dynamic world of programming. I enjoy exploring different technologies, transforming ideas into digital wonders. With attention to detail and a creative touch, I specialize in crafting digital solutions that surpass expectations, adding life to imaginative concepts. My dedication to learning and mastering technology empowers me to tackle challenges, creating resilient and user-friendly apps. As a full-stack developer, I've fine-tuned both front-end and back-end skills, constructing seamless and effective systems. I'm always eager to learn and stay updated with the latest tech trends, ensuring my skills are not just current but cutting-edge. Collaboration is my strength, and effective communication is my tool—I thrive in teamwork, guiding projects toward success. I'm excited to embark on new projects and contribute my expertise to solving complex problems in the world of technology.
+          Passionate about technology,
+          I am a coding explorer
+          venturinginto the dynamic world
+          of programming.I enjoy
+          exploring different technologies,
+          transforming ideas into digital wonders.
+          With attention to detail and a creative touch,
+          I specialize in crafting digital solutions
+          that surpass expectations,
+          adding life to imaginative concepts.
+          My dedication to learning and mastering
+          technology empowers me to tackle
+          challenges, creating resilient and
+          user-friendly apps.
+          As a full-stack developer, I have
+          fine-tuned bothfront-end and back-end
+          skills, constructing seamless and
+          effective systems. I am always eager
+          to learn and stay updated with the
+          latest tech trends,ensuring my
+          skills are not just current but
+          cutting-edge. Collaboration is my
+          strength, and effective communication
+          is my tool—I thrive in teamwork,
+          guiding projects toward success.
+          I am excited to embark on new projects
+          and contribute my expertise to solving complex
+          problems in the world of technology.
         </p>
       </div>
     </div>
