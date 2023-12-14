@@ -136,7 +136,7 @@ const Portfolio = () => {
                     <div className="flex gap-4">
                       {technologies.map((tech, index) => (
                         <span
-                          key={index}
+                          key={index} // eslint-disable-line react/no-array-index-key
                           className="bg-white md:text-[14px] text-black p-1 rounded-md"
                         >
                           {tech}
