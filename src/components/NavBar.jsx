@@ -33,6 +33,10 @@ const NavBar = () => {
     },
   ];
 
+  const handleNavClick = () => {
+    setNav(!nav);
+  };
+
   return (
     <div className="flex justify-between items-center w-full text-white bg-[#0F0F0F] md:px-[7rem] h-20 fixed">
       <div>
@@ -40,29 +44,40 @@ const NavBar = () => {
       </div>
       <ul className="hidden md:flex capitalize gap-[2rem] font-bold md:text-[16px] cursor-pointer">
         {links.map(({ id, link, style }) => (
-          <li key={id} className={`${'hover:text-[#F39F5A] md:transition-transform md:transform md:hover:scale-110 md:duration-500' + ' '}${style}`}>
-            <Link
-              to={link}
-              smooth
-              duration={500}
-              offset={-75}
-            >
+          <li
+            key={id}
+            className={`${style} hover:text-[#F39F5A] md:transition-transform md:transform md:hover:scale-110 md:duration-500`}
+          >
+            <Link to={link} smooth duration={500} offset={-75}>
               {link}
             </Link>
           </li>
         ))}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="md:hidden cursor-pointer pr-4 z-10 text-[#DADDB1]">
+      <button
+        onClick={handleNavClick}
+        onKeyDown={handleNavClick}
+        type="button"
+        tabIndex={0}
+        className="md:hidden cursor-pointer pr-4 z-10 text-[#DADDB1]"
+      >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
+      </button>
 
       {nav && (
         <ul className="flex flex-col justify-center items-center uppercase gap-[2rem] font-medium cursor-pointer absolute top-0 left-0 w-full h-screen bg-[#F39F5A]">
           {links.map(({ id, link }) => (
-            <li key={id} onClick={() => setNav(!nav)} className="cursor-pointer uppercase px-10 py-3 text-2xl hover:text-[#1A1A1A] hover:rounded-[8px]">
+            <button
+              key={id}
+              onClick={handleNavClick}
+              onKeyDown={handleNavClick}
+              type="button"
+              tabIndex={0}
+              className="cursor-pointer uppercase px-10 py-3 text-2xl hover:text-[#1A1A1A] hover:rounded-[8px]"
+            >
               <Link
-                onClick={() => setNav(!nav)}
+                onClick={handleNavClick}
                 to={link}
                 smooth
                 duration={500}
@@ -70,7 +85,7 @@ const NavBar = () => {
               >
                 {link}
               </Link>
-            </li>
+            </button>
           ))}
         </ul>
       )}
