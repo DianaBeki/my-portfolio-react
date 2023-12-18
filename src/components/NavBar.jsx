@@ -46,7 +46,7 @@ const NavBar = () => {
         {links.map(({ id, link, style }) => (
           <li
             key={id}
-            className={`${style} hover:text-[#F39F5A] md:transition-transform md:transform md:hover:scale-110 md:duration-500`}
+            className={`${style} hover:text-[#E3651D] md:transition-transform md:transform md:hover:scale-110 md:duration-500`}
           >
             <Link to={link} smooth duration={500} offset={-75}>
               {link}
