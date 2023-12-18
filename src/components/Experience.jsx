@@ -57,8 +57,7 @@ const Experience = () => {
     <div name="experience" className="bg-gradient-to-b from-black to-gray-800 pb-[2rem] md:pb-[10rem]">
       <div className="flex flex-col justify-center text-[#FFF7D4]">
         <div className="text-center">
-          <p className="bg-clip-text bg-gradient-to-b from-[#B6FFFA] to-[#FF6C22] text-transparent text-3xl md:text-4xl pt-5 md:pt-10">Experience</p>
-          <p className="px-3 md:py-6 text-[1.2rem]">These are the technologies I have actively engaged with</p>
+          <h2 className="bg-clip-text bg-gradient-to-b from-[#B6FFFA] to-[#FF6C22] text-transparent text-3xl md:text-4xl pt-5 md:pt-10">Experience</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-8 md:px-12 px-5">
           {techs.map(({
