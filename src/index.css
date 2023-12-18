@@ -13,5 +13,13 @@
 
 .bg-clip-text {
   -webkit-background-clip: text;
-  background-clip: text;
+   background-clip: text;
 }
+
+.bg-img {
+  background-image: url(https://img.freepik.com/premium-vector/grey-abstract-geometric-technology-shape-concept-background_29865-114.jpg?size=626&ext=jpg&uid=R76852349&ga=GA1.2.446972296.1699012389&semt=ais);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
