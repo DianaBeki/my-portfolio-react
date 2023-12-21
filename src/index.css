@@ -1,94 +1,108 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Font styling for the entire HTML document */
 @layer base {
   html {
     font-family: 'Roboto', sans-serif;
   }
 }
 
+/* Background clip text styling */
 .bg-clip-text {
   -webkit-background-clip: text;
-   background-clip: text;
+  background-clip: text;
 }
 
+/* Background styles for different sections */
 .bg-home,
- .bg-about,
- .bg-portfolio,
- .bg-contact,
- .bg-tools {
+.bg-about,
+.bg-portfolio,
+.bg-contact,
+.bg-tools {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  }
+}
 
-  .bg-home {
-    background-image:url(https://media.istockphoto.com/id/805088558/photo/connection.jpg?s=612x612&w=0&k=20&c=swoxN5G1O-xnKdD5Op3yfU3eExkaKDv-BE9ABH64TU8=);
-  }
-  
-  .bg-about {
-    background-image: url(https://img.freepik.com/premium-photo/blue-modern-tech-guide-background-14_769134-338.jpg?size=626&ext=jpg&uid=R76852349&ga=GA1.2.446972296.1699012389&semt=ais);
-  }
+/* Home background image */
+.bg-home {
+  background-image: url(https://media.istockphoto.com/id/805088558/photo/connection.jpg?s=612x612&w=0&k=20&c=swoxN5G1O-xnKdD5Op3yfU3eExkaKDv-BE9ABH64TU8=);
+}
 
-  .bg-portfolio {
-    background-image: url(https://media.istockphoto.com/id/1354045696/photo/white-background-abstract.jpg?s=612x612&w=0&k=20&c=VMcLbK4W0PRGTBltpsWMxB69X030Y_psQ_nuUj4rPBw=);
-  }
+/* About background image */
+.bg-about {
+  background-image: url(https://img.freepik.com/premium-photo/blue-modern-tech-guide-background-14_769134-338.jpg?size=626&ext=jpg&uid=R76852349&ga=GA1.2.446972296.1699012389&semt=ais);
+}
 
-  .bg-tools {
-    background-image: url(./assets/experience/bg-tools.jpg);
-  }
+/* Portfolio background image */
+.bg-portfolio {
+  background-image: url(https://media.istockphoto.com/id/1354045696/photo/white-background-abstract.jpg?s=612x612&w=0&k=20&c=VMcLbK4W0PRGTBltpsWMxB69X030Y_psQ_nuUj4rPBw=);
+}
 
-  .bg-contact {
-    background-image: url(https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=);
-  }
-   
-  .frontend,
-  .designer,
-  .professional {
-    background-color: #FF9800;
-    padding: 20px;
-    border-radius: 0.375rem; 
-    max-width: 350px;
-    min-width: 300px;
-    min-height: 350px;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-  }
+/* Tools background image */
+.bg-tools {
+  background-image: url(./assets/experience/bg-tools.jpg);
+}
 
-  .frontend:hover, 
-  .designer:hover,
- .professional:hover {
+/* Contact background image */
+.bg-contact {
+  background-image: url(https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=);
+}
+
+/* Styling for different categories with background color, padding, and border-radius */
+.frontend,
+.designer,
+.professional {
+  background-color: #ff9800;
+  padding: 20px;
+  border-radius: 0.375rem;
+  max-width: 350px;
+  min-width: 300px;
+  min-height: 350px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover styles for different categories */
+.frontend:hover,
+.designer:hover,
+.professional:hover {
   transform: scale(0.95);
   box-shadow: 0 4px 6px -1px beige;
- } 
+}
 
-  .icon {
- border-radius: 50%;
- width: 25%;
- margin-bottom: 15px;
- margin: 0 auto;
-  }
+/* Styling for the icon */
+.icon {
+  border-radius: 50%;
+  width: 25%;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
 
-  .h-center {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #100F0F;
-    animation: fadeIn 1s ease-in-out forwards;
-  }
+/* Centering text horizontally */
+.h-center {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #100f0f;
+  animation: fadeIn 1s ease-in-out forwards;
+}
 
-  .languages li,
-  .design li,
-  .prof li {
-    color: black;
-    border: 2px solid white;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    padding: 7px;
-    margin-inline: 5px;
-  }
-  
+/* Styling for list items in different sections */
+.languages li,
+.design li,
+.prof li {
+  color: black;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 7px;
+  margin-inline: 5px;
+}
