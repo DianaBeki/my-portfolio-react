@@ -1,70 +1,79 @@
 import React from 'react';
+import icon1 from '../assets/about/icon1.png';
+import icon2 from '../assets/about/icon2.png';
+import icon3 from '../assets/about/icon3.png';
 
 const About = () => (
-  <div name="about" className="bg-gradient-to-b from-gray-800 to-black text-[#EBE3D5] pt-[3rem] px-[3rem] pb-[5rem] w-full mx-auto">
-    <div className="text-center md:pb-10">
-      <h1 className="text-2xl md:text-3xl lg:text-6xl bg-clip-text bg-gradient-to-b from-[#B6FFFA] to-[#FF6C22] text-transparent font-bold rounded-md">
-        About Me
-      </h1>
-    </div>
+  <div name="about" className="bg-about pt-[3rem] pb-[2rem] lg:pb-[6rem] w-full">
+    <div className="flex flex-col justify-center items-center gap-3 md:gap-6 mx-[1rem] md:mx-[2rem] lg:mx-[6rem]">
+      <div className="text-[#1640D6]">
+        <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold rounded-md">
+          About Me
+        </h1>
+      </div>
+      <div className="">
+        <div className="text-[#1640D6] font-[400]">
+          <p className="text-[1.2rem] lg:text-[1.3rem]">
+            Passionate about frontend development,
+            I am a coding explorer turning ideas
+            into digital wonders. With a keen eye
+            for detail and a creative touch,
+            I specialize in crafting user-centric
+            solutions that go beyond expectations.
+            My dedication to learning and staying
+            current with the latest tech trends
+            empowers me to create resilient and
+            intuitive apps. As a team player,
+            effective communication is my tool—I
+            thrive in collaborative environments,
+            guiding projects to success. Excited
+            to bring my frontend expertise to
+            new projects and solve complex problems
+            in the dynamic world of technology.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-[20px] mt-[2rem]">
+          <div className="frontend">
+            <img src={icon1} alt="icons" className="icon" />
+            <h2 className="h-center">Frontend Developer</h2>
+            <ul className="languages flex justify-center gap-2 flex-wrap p-0">
+              <li>JavaScript</li>
+              <li>Webpack</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Tailwind</li>
+              <li>TypeScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
 
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-      <div className="flex-1">
-        <div className="hidden md:flex flex-col gap-7">
-          <div className="bg-[#F8FFD2] rounded-md p-3 text-[#191919] inline-block">
-            <ul>
-              <p className="text-2xl bg-clip-text bg-gradient-to-b from-[#000000] to-[#FF6C22] text-transparent mb-3">Skills</p>
-              <li>Pair-programming</li>
+          <div className="designer">
+            <img src={icon2} alt="icons" className="icon" />
+            <h2 className="h-center">Designer</h2>
+            <ul className="design flex justify-center gap-2 flex-wrap p-0">
+              <li>Font Awesome</li>
+              <li>Google Fonts</li>
+              <li>UX/UI</li>
+              <li>Web</li>
+              <li>Apps</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div className="professional">
+            <img src={icon3} alt="icons" className="icon" />
+            <h2 className="h-center">Professional</h2>
+            <ul className="prof flex justify-center gap-2 flex-wrap p-0">
               <li>Remote Collaboration</li>
-              <li>Web Development</li>
+              <li>Teamwork</li>
+              <li>Pair-Programming</li>
+              <li>Dev Tools</li>
               <li>Github</li>
               <li>Git</li>
             </ul>
           </div>
-          <div className="bg-[#F8FFD2] rounded-md p-3 text-[#191919] inline-block">
-            <ul>
-              <p className="text-2xl bg-clip-text bg-gradient-to-b from-[#000000] to-[#FF6C22] text-transparent mb-3">Soft Skills</p>
-              <li>Effective Communication</li>
-              <li>Problem Solving</li>
-              <li>Time Management</li>
-              <li>Adaptability</li>
-              <li>Feedback and collaboration</li>
-              <li>Networking</li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <div className="flex-1">
-        <p className="text-[#FFF7D4] text-[1.2rem] lg:text-[1.3rem]">
-          Passionate about technology,
-          I am a coding explorer
-          venturinginto the dynamic world
-          of programming.I enjoy
-          exploring different technologies,
-          transforming ideas into digital wonders.
-          With attention to detail and a creative touch,
-          I specialize in crafting digital solutions
-          that surpass expectations,
-          adding life to imaginative concepts.
-          My dedication to learning and mastering
-          technology empowers me to tackle
-          challenges, creating resilient and
-          user-friendly apps.
-          As a full-stack developer, I have
-          fine-tuned bothfront-end and back-end
-          skills, constructing seamless and
-          effective systems. I am always eager
-          to learn and stay updated with the
-          latest tech trends,ensuring my
-          skills are not just current but
-          cutting-edge. Collaboration is my
-          strength, and effective communication
-          is my tool—I thrive in teamwork,
-          guiding projects toward success.
-          I am excited to embark on new projects
-          and contribute my expertise to solving complex
-          problems in the world of technology.
-        </p>
       </div>
     </div>
   </div>
