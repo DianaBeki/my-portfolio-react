@@ -26,17 +26,16 @@ const Contact = () => {
   };
 
   return (
-    <div name="contact" className="bg-gradient-to-b from-black to-gray-800 pt-[3rem] px-[3rem] pb-[10rem] w-full h-screen text-[#FFF7D4] flex justify-center items-center">
+    <div name="contact" className="bg-contact pt-[3rem] px-[3rem] pb-[5rem] w-full flex justify-center items-center">
       <div className="mx-auto h-full">
         <div className="mb-10">
-          <h2 className="text-[#F39F5A] md:font-semibold">
+          <h2 className="text-[#DA0C81] md:font-semibold">
             I&apos;m open to exciting project
             opportunities and would love to connect.
             Feel free to reach out,
             I&apos;m ready to chat!
           </h2>
         </div>
-
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
@@ -45,8 +44,7 @@ const Contact = () => {
               name="fullname"
               maxLength="30"
               required
-              aria-required="true"
-              className="p-2 bg-transparent border-b-2 border-[#F39F5A]  text-white focus:outline-none w-full rounded-md"
+              className="p-2 bg-transparent border-b-2 border-[#FF6C22] text-white focus:outline-none w-full rounded-md"
             />
           </div>
           <div className="mb-4">
@@ -55,8 +53,7 @@ const Contact = () => {
               name="email"
               placeholder="Email address"
               required
-              aria-required="true"
-              className="p-2 bg-transparent border-b-2 border-[#F39F5A]  text-white focus:outline-none w-full rounded-md"
+              className="p-2 bg-transparent border-b-2 border-[#FF6C22]  text-white focus:outline-none w-full rounded-md"
             />
           </div>
           <div className="mb-4">
@@ -65,12 +62,11 @@ const Contact = () => {
               rows="5"
               placeholder="Write me something..."
               required
-              aria-required="true"
-              className="p-2 bg-transparent border-b-2 border-[#F39F5A]  text-white focus:outline-none w-full rounded-md md:mt-[2rem]"
+              className="p-2 bg-transparent border-b-2 border-[#FF6C22] text-white focus:outline-none w-full rounded-md md:mt-[2rem]"
             />
           </div>
 
-          <button type="submit" className="m-1 px-5 py-2 md:px-6 md:py-3 border-b border-[#F39F5A] hover:border-none bg-gray-800 rounded-lg duration-500  hover:skew-y-3 hover:scale-x-50 hover:shadow-md hover:shadow-[#C69774] hover:bg-gradient from-[#31304D] to-[rgb(107,36,12)] hover:text-[#F7B787] rounded-br-[10rem]">
+          <button type="submit" className="m-1 px-5 py-2 md:px-6 md:py-3 border-b-4 border-[#F4EAE0s] hover:border-none text-[#0F0F0F] bg-[#FF6C22] rounded-lg duration-500  hover:skew-y-3 hover:scale-x-50 hover:shadow-md hover:shadow-black hover:bg-[#DA0C81] rounded-br-[10rem]">
             Get in touch
           </button>
         </form>
