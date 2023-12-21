@@ -38,7 +38,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full text-[#FFEBD8]  bg-[#0F0F0F] md:px-[7rem] h-20 fixed">
+    <div className="bg-nav flex justify-between items-center w-full text-white md:px-[7rem] h-20 fixed">
       <div>
         <h1 className="font-signature text-5xl">Diana</h1>
       </div>
