@@ -38,7 +38,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full text-white bg-[#0F0F0F] md:px-[7rem] h-20 fixed">
+    <div className="flex justify-between items-center w-full text-[#FFEBD8]  bg-[#0F0F0F] md:px-[7rem] h-20 fixed">
       <div>
         <h1 className="font-signature text-5xl">Diana</h1>
       </div>
@@ -60,13 +60,13 @@ const NavBar = () => {
         onKeyDown={handleNavClick}
         type="button"
         tabIndex={0}
-        className="md:hidden cursor-pointer pr-4 z-10 text-[#DADDB1]"
+        className="md:hidden cursor-pointer pr-4 z-10 text-[#FFEBD8]"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </button>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center uppercase gap-[2rem] font-medium cursor-pointer absolute top-0 left-0 w-full h-screen bg-[#F39F5A]">
+        <ul className="flex flex-col justify-center items-center uppercase gap-[2rem] font-medium cursor-pointer absolute top-0 left-0 w-full h-screen bg-[#E3651D]">
           {links.map(({ id, link }) => (
             <button
               key={id}
