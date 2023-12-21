@@ -34,7 +34,7 @@ const About = () => (
         </div>
         <div className="flex flex-wrap justify-center items-center gap-[20px] mt-[2rem]">
           <div className="frontend">
-            <img src={icon1} alt="icons" className="icon" />
+            <img src={icon1} alt="icons" className="icon hover:rotate-90 duration-500" />
             <h2 className="h-center">Frontend Developer</h2>
             <ul className="languages flex justify-center gap-2 flex-wrap p-0">
               <li>JavaScript</li>
@@ -49,7 +49,7 @@ const About = () => (
           </div>
 
           <div className="designer">
-            <img src={icon2} alt="icons" className="icon" />
+            <img src={icon2} alt="icons" className="icon  hover:rotate-180 duration-500" />
             <h2 className="h-center">Designer</h2>
             <ul className="design flex justify-center gap-2 flex-wrap p-0">
               <li>Font Awesome</li>
@@ -62,7 +62,7 @@ const About = () => (
           </div>
 
           <div className="professional">
-            <img src={icon3} alt="icons" className="icon" />
+            <img src={icon3} alt="icons" className="icon  hover:rotate-90 duration-500" />
             <h2 className="h-center">Professional</h2>
             <ul className="prof flex justify-center gap-2 flex-wrap p-0">
               <li>Remote Collaboration</li>
