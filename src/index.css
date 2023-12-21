@@ -21,6 +21,7 @@
 }
 
 /* Background styles for different sections */
+.bg-nav,
 .bg-home,
 .bg-about,
 .bg-portfolio,
@@ -31,9 +32,13 @@
   background-repeat: no-repeat;
 }
 
+.bg-nav {
+  background: #001219;
+}
+
 /* Home background image */
 .bg-home {
-  background-image: url(https://media.istockphoto.com/id/805088558/photo/connection.jpg?s=612x612&w=0&k=20&c=swoxN5G1O-xnKdD5Op3yfU3eExkaKDv-BE9ABH64TU8=);
+  background-image: url(https://img.freepik.com/free-vector/black-geometric-memphis-social-banner_53876-116843.jpg)
 }
 
 /* About background image */
