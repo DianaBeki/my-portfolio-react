@@ -104,10 +104,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 text-white w-full pb-[5rem]">
+    <div name="portfolio" className="bg-portfolio w-full pt-[3rem] pb-[5rem]">
       <div className="">
-        <div className="pb-5 md:pb-[5rem] text-center">
-          <p className="text-2xl md:text-5xl bg-clip-text bg-gradient-to-b from-[#B6FFFA] to-[#FF6C22] text-transparent font-bold md:inline md:border-b-4 md:border-white">My Recent Projects</p>
+        <div className="pb-5 md:pb-[5rem] text-center text-[#22092C]">
+          <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-[#22092C]">My Recent Projects</h2>
         </div>
 
         <div className="mx-auto md:mx-10">
@@ -117,7 +117,7 @@ const Portfolio = () => {
                 type="button"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 rounded-[50%] px-4 py-2"
+                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-[#E3651D] rounded-[50%] px-4 py-2"
               >
                 &lt;
               </button>
@@ -128,26 +128,26 @@ const Portfolio = () => {
               }) => (
                 <div
                   key={id}
-                  className="shadow-md shadow-[#FFFFDD] rounded-lg lg:duration-500 lg:hover:scale-95 cursor-pointer"
+                  className="shadow-lg shadow-[#FCE09B] rounded-md bg-[#000000] lg:duration-500 lg:hover:scale-95 cursor-pointer"
                 >
-                  <img src={src} alt="Project screenshots" className="rounded-md md:pb-3" />
+                  <img src={src} alt="projects" className="rounded-md md:pb-3" />
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <p className="text-1xl">{description}</p>
-                    <div className="flex gap-4">
+                    <p className="text-1xl text-center text-[#F57328]">{description}</p>
+                    <div className="flex flex-wrap gap-3 p-0">
                       {technologies.map((tech, index) => (
                         <span
                           key={index} // eslint-disable-line react/no-array-index-key
-                          className="bg-white md:text-[14px] text-black p-1 rounded-md"
+                          className="border-2 border-white md:text-[14px] text-[#EB1D36] p-2 rounded-md text-[1.2rem]"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
-                    <div className="text-gray-800 flex gap-10 pb-5">
+                    <div className="text-[#000000] text-[1.1rem] flex gap-10 pb-5">
                       <button
                         type="button"
                         onClick={() => handleSeeLiveClick(seelive)}
-                        className={`border-2 border-[#FFF5C2] px-2 py-1 md:px-4 md:py-2  bg-gradient-to-r from-[#A9B388] to-[#B99470] rounded-md duration-500 hover:scale-110 ${
+                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#F57328] rounded-md duration-500 hover:scale-110 ${
                           !seelive && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seelive}
@@ -157,7 +157,7 @@ const Portfolio = () => {
                       <button
                         type="button"
                         onClick={() => handleSeeSourceClick(seesource)}
-                        className={`border-2 border-[#FFF5C2] px-2 py-1 md:px-4 md:py-2 bg-gradient-to-r from-[#A9B388] to-[#B99470] rounded-md duration-500 hover:scale-110 font-size ${
+                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#F57328] rounded-md duration-500 hover:scale-110 font-size ${
                           !seesource && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seesource}
@@ -174,7 +174,7 @@ const Portfolio = () => {
                 type="button"
                 onClick={handleNext}
                 disabled={startIndex + getItemsPerPage() >= portfolios.length}
-                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 rounded-[50%] px-4 py-2"
+                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-[#E3651D] rounded-[50%] px-4 py-2"
               >
                 &gt;
               </button>
