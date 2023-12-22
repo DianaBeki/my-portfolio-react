@@ -106,8 +106,8 @@ const Portfolio = () => {
   return (
     <div name="portfolio" className="bg-portfolio w-full pt-[3rem] pb-[5rem]">
       <div className="">
-        <div className="pb-5 md:pb-[5rem] text-center text-[#22092C]">
-          <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-[#22092C]">My Recent Projects</h2>
+        <div className="text-[#f3722cf3] pb-5 md:pb-[5rem] text-center">
+          <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
         <div className="mx-auto md:mx-10">
@@ -117,7 +117,7 @@ const Portfolio = () => {
                 type="button"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-[#E3651D] rounded-[50%] px-4 py-2"
+                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
               >
                 &lt;
               </button>
@@ -128,16 +128,16 @@ const Portfolio = () => {
               }) => (
                 <div
                   key={id}
-                  className="shadow-lg shadow-[#FCE09B] rounded-md bg-[#000000] lg:duration-500 lg:hover:scale-95 cursor-pointer"
+                  className="shadow-lg shadow-[#001219] rounded-md bg-white lg:duration-500 lg:hover:scale-95 cursor-pointer"
                 >
                   <img src={src} alt="projects" className="rounded-md md:pb-3" />
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <p className="text-1xl text-center text-[#F57328]">{description}</p>
-                    <div className="flex flex-wrap gap-3 p-0">
+                    <p className="bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent text-1xl text-center font-[500]">{description}</p>
+                    <div className="flex flex-wrap gap-2 p-0">
                       {technologies.map((tech, index) => (
                         <span
                           key={index} // eslint-disable-line react/no-array-index-key
-                          className="border-2 border-white md:text-[14px] text-[#EB1D36] p-2 rounded-md text-[1.2rem]"
+                          className="border-2 border-black md:text-[14px] bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent p-2 rounded-md text-[1.3rem]"
                         >
                           {tech}
                         </span>
@@ -147,7 +147,7 @@ const Portfolio = () => {
                       <button
                         type="button"
                         onClick={() => handleSeeLiveClick(seelive)}
-                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#F57328] rounded-md duration-500 hover:scale-110 ${
+                        className={`border-2 border-white px-2 py-1 text-[#f8f9fad2] md:px-4 md:py-2 bg-[#f3722c] hover:bg-[#001219ee] rounded-md duration-500 hover:scale-110 ${
                           !seelive && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seelive}
@@ -157,7 +157,7 @@ const Portfolio = () => {
                       <button
                         type="button"
                         onClick={() => handleSeeSourceClick(seesource)}
-                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#F57328] rounded-md duration-500 hover:scale-110 font-size ${
+                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#f3722c] hover:bg-[#001219ee] rounded-lg duration-500 hover:scale-110 text-[#f8f9fad2] font-size ${
                           !seesource && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seesource}
@@ -174,7 +174,7 @@ const Portfolio = () => {
                 type="button"
                 onClick={handleNext}
                 disabled={startIndex + getItemsPerPage() >= portfolios.length}
-                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-[#E3651D] rounded-[50%] px-4 py-2"
+                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
               >
                 &gt;
               </button>
