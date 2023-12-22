@@ -6,13 +6,13 @@ import icon3 from '../assets/about/icon3.png';
 const About = () => (
   <div name="about" className="bg-about pt-[3rem] pb-[2rem] lg:pb-[6rem] w-full">
     <div className="flex flex-col justify-center items-center gap-3 md:gap-6 mx-[1rem] md:mx-[2rem] lg:mx-[6rem]">
-      <div className="text-[#1640D6]">
+      <div className="bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent">
         <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold rounded-md">
           About Me
         </h1>
       </div>
       <div className="">
-        <div className="text-[#1640D6] font-[400]">
+        <div className="bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent font-[400]">
           <p className="text-[1.2rem] lg:text-[1.3rem]">
             Passionate about frontend development,
             I am a coding explorer turning ideas
