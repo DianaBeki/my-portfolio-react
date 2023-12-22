@@ -53,12 +53,15 @@
 
 /* Tools background image */
 .bg-tools {
-  background-image: url(https://media.istockphoto.com/id/1182956228/photo/abstract-3d-background.jpg?s=612x612&w=0&k=20&c=yrcU9OdCz6In-_Ye-hEtrDlr76eKhOqf9RGpR9v5wyU=);
+  background-image: url(https://media.istockphoto.com/id/1220837091/photo/crumpled-black-cardboard-with-wrinkles-and-wrinkled-folds-old-wrapping-dusty-paper.jpg?s=612x612&w=0&k=20&c=F6Foi5dV26F3xRZtt1Wb4WV78o8KdtQKIRgjfgUro_s=);
 }
 
 /* Contact background image */
 .bg-contact {
-  background-image: url(https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=);
+  background-image: url(https://media.istockphoto.com/id/1482342948/photo/artificial-intelligence-deep-learning-technology-background-dissolving-human-face-with-cube.jpg?s=612x612&w=0&k=20&c=bXJwQJwkay-Im_T3n1WrvJecQUG9iPYkukUsEmOC2H8=);
+  margin-top: 30px;
+  border-top-left-radius: 80px;
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
 }
 
 /* Styling for different categories with background color, padding, and border-radius */
