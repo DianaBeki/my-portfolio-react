@@ -110,7 +110,7 @@ const Portfolio = () => {
           <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
-        <div className="mx-auto md:mx-10">
+        <div className="mx-5 md:mx-10">
           <div className="flex justify-center items-center gap-[1.2rem]">
             <div className="">
               <button
@@ -133,11 +133,11 @@ const Portfolio = () => {
                   <img src={src} alt="projects" className="rounded-md md:pb-3" />
                   <div className="flex flex-col items-center justify-center gap-4">
                     <p className="bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent text-1xl text-center font-[500]">{description}</p>
-                    <div className="flex flex-wrap gap-2 p-0">
+                    <div className="">
                       {technologies.map((tech, index) => (
                         <span
                           key={index} // eslint-disable-line react/no-array-index-key
-                          className="border-2 border-black md:text-[14px] bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent p-2 rounded-md text-[1.3rem]"
+                          className="border-2 border-black md:text-[14px] bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent p-2 m-2 rounded-md text-[1.1rem]"
                         >
                           {tech}
                         </span>
