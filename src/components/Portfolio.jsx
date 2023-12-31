@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Bookstore from '../assets/portfolio/Bookstore.png';
-import Budget from '../assets/portfolio/budget.png';
+import Spacehub from '../assets/portfolio/Spacehub.png';
 import Fashion from '../assets/portfolio/Fashion.png';
 import Mathmagician from '../assets/portfolio/Mathmagician.png';
 import Meal from '../assets/portfolio/meal.png';
@@ -18,11 +18,11 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: Budget,
-      description: 'Budget app a fully functional site for comprehensive management, tracking payments, and categorizing expenses. Users can monitor spendings',
-      technologies: ['Rails', 'PostgreSQL', 'Rspec'],
-      seelive: 'https://expenses-app-584x.onrender.com',
-      seesource: 'https://github.com/DianaBeki/budget-app',
+      src: Spacehub,
+      description: 'Space Travelers’ Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
+      technologies: ['React', 'Redux', 'Rest API'],
+      seelive: 'https://space-travelers-three.vercel.app/',
+      seesource: 'https://github.com/DianaBeki/space-travelers-hub',
     },
     {
       id: 3,
