@@ -104,20 +104,20 @@ const Portfolio = () => {
   };
 
   return (
-    <div name="portfolio" className="bg-portfolio w-full pt-[3rem] pb-[5rem]">
+    <div name="portfolio" className="bg-[#001219] w-full pt-[3rem] pb-[5rem]">
       <div className="">
         <div className="text-[#f3722cf3] pb-5 md:pb-[5rem] text-center">
           <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
         <div className="mx-5 md:mx-10">
-          <div className="flex justify-center items-center gap-[1.2rem]">
+          <div className="flex justify-center items-center gap-[.5rem]">
             <div className="">
               <button
                 type="button"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
+                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-full px-4 py-2"
               >
                 &lt;
               </button>
