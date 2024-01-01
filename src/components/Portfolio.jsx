@@ -110,14 +110,14 @@ const Portfolio = () => {
           <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
-        <div className="mx-5 md:mx-10">
+        <div className="px-5">
           <div className="flex justify-center items-center gap-[.5rem]">
             <div className="">
               <button
                 type="button"
                 onClick={handlePrev}
                 disabled={startIndex === 0}
-                className="next-btn bg-[#22092C] text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-full px-4 py-2"
+                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
               >
                 &lt;
               </button>
@@ -128,16 +128,16 @@ const Portfolio = () => {
               }) => (
                 <div
                   key={id}
-                  className="shadow-lg shadow-[#001219] rounded-md bg-white lg:duration-500 lg:hover:scale-95 cursor-pointer"
+                  className="shadow-lg shadow-[#001219] rounded-md bg-white lg:duration-500 lg:hover:scale-95 cursor-pointer w-full min-h-[300px]"
                 >
                   <img src={src} alt="projects" className="rounded-md md:pb-3" />
-                  <div className="flex flex-col items-center justify-center gap-4">
-                    <p className="bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent text-1xl text-center font-[500]">{description}</p>
+                  <div className="flex flex-col items-center justify-center gap-6">
+                    <p className="text-[#001219] text-1xl text-center font-[500]">{description}</p>
                     <div className="">
                       {technologies.map((tech, index) => (
                         <span
                           key={index} // eslint-disable-line react/no-array-index-key
-                          className="border-2 border-black md:text-[14px] bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent p-2 m-2 rounded-md text-[1.1rem]"
+                          className="border-2 border-[#001219] md:text-[14px] bg-clip-text bg-gradient-to-r from-[#001219] to-[#f3722c] text-transparent p-2 m-1 rounded-md"
                         >
                           {tech}
                         </span>
@@ -147,7 +147,7 @@ const Portfolio = () => {
                       <button
                         type="button"
                         onClick={() => handleSeeLiveClick(seelive)}
-                        className={`border-2 border-white px-2 py-1 text-[#f8f9fad2] md:px-4 md:py-2 bg-[#f3722c] hover:bg-[#001219ee] rounded-md duration-500 hover:scale-110 ${
+                        className={`border-2 border-white px-2 py-1 text-[#f8f9fad2] md:px-4 md:py-2 bg-gradient-to-r from-[#001219] to-[#f3722c] hover:bg-[#001219ee] rounded-md duration-500 hover:scale-110 ${
                           !seelive && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seelive}
@@ -157,7 +157,7 @@ const Portfolio = () => {
                       <button
                         type="button"
                         onClick={() => handleSeeSourceClick(seesource)}
-                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-[#f3722c] hover:bg-[#001219ee] rounded-lg duration-500 hover:scale-110 text-[#f8f9fad2] font-size ${
+                        className={`border-2 border-white px-2 py-1 md:px-4 md:py-2 bg-gradient-to-r from-[#001219] to-[#f3722c] hover:bg-[#001219ee] rounded-lg duration-500 hover:scale-110 text-[#f8f9fad2] font-size ${
                           !seesource && 'opacity-50 cursor-not-allowed'
                         }`}
                         disabled={!seesource}

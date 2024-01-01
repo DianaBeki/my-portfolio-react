@@ -29,7 +29,7 @@ const Contact = () => {
     <div name="contact" className="bg-contact bg-[#001219] pt-[3rem] px-[3rem] pb-[5rem] w-full flex justify-center items-center">
       <div className="mx-auto h-full">
         <div className="mb-10">
-          <h2 className="text-[#f8f9fad2] md:font-semibold">
+          <h2 className="text-white md:font-semibold">
             I&apos;m open to exciting project
             opportunities and would love to connect.
             Feel free to reach out,
@@ -44,7 +44,7 @@ const Contact = () => {
               name="fullname"
               maxLength="30"
               required
-              className="p-2 bg-transparent border-b-2 border-[#f8f9fad2] text-white focus:outline-none w-full rounded-md"
+              className="p-2 bg-transparent border-b-2 border-white text-white focus:outline-none w-full rounded-md"
             />
           </div>
           <div className="mb-4">
@@ -53,20 +53,20 @@ const Contact = () => {
               name="email"
               placeholder="Email address"
               required
-              className="p-2 bg-transparent border-b-2 border-[#f8f9fad2] text-white focus:outline-none w-full rounded-md"
+              className="p-2 bg-transparent border-b-2 border-white text-white focus:outline-none w-full rounded-md"
             />
           </div>
           <div className="mb-4">
             <textarea
               name="message"
-              rows="5"
+              rows="3"
               placeholder="Write me something..."
               required
-              className="p-2 bg-transparent border-b-2 text-white border-[#f8f9fad2] focus:outline-none w-full rounded-md md:mt-[2rem]"
+              className="p-2 bg-transparent border-b-2 text-white border-white focus:outline-none w-full rounded-md md:mt-[2rem]"
             />
           </div>
 
-          <button type="submit" className="m-1 px-5 py-2 md:px-6 md:py-3 border-b-4 border-[#E3651D] hover:border-none text-[#001219] bg-[#f8f9fad2] rounded-lg duration-500  hover:skew-y-3 hover:scale-x-50 hover:shadow-md hover:shadow-black hover:bg-[#f8f9fad2] hover:text-black rounded-br-[10rem]">
+          <button type="submit" className="mt-0 md:mt-4 px-5 py-2 md:px-6 md:py-3 border-b-4 border-white hover:border-none text-[#fefae0] bg-gradient-to-r from-[#001219] to-[#f3722c] rounded-lg duration-500  hover:skew-y-3 hover:scale-x-50 hover:shadow-md hover:shadow-black hover:bg-white rounded-br-[10rem]">
             Get in touch
           </button>
         </form>
