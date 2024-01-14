@@ -9,38 +9,6 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: Bookstore,
-      description: 'The Bookstore is a React and Redux website that allows users to add a book to the list displays list of books remove a book from the list.',
-      technologies: ['React', 'Redux', 'API'],
-      seelive: 'https://bookstore-f5ng.onrender.com',
-      seesource: 'https://github.com/DianaBeki/bookstore',
-    },
-    {
-      id: 2,
-      src: Spacehub,
-      description: 'Space Travelers’ Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
-      technologies: ['React', 'Redux', 'Rest API'],
-      seelive: 'https://space-travelers-three.vercel.app/',
-      seesource: 'https://github.com/DianaBeki/space-travelers-hub',
-    },
-    {
-      id: 3,
-      src: Fashion,
-      description: 'A fashion week is a Web App bringing together fashion designers, brands, and houses, showcasing their latest collections through mesmerizing runway shows',
-      technologies: ['Javascript', 'HTML', 'CSS'],
-      seelive: 'https://dianabeki.github.io/Fashion-week/',
-      seesource: 'https://github.com/DianaBeki/Fashion-week',
-    },
-    {
-      id: 4,
-      src: Mathmagician,
-      description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
-      technologies: ['Reactjs', 'sass', 'HTML', 'CSS'],
-      seelive: 'https://mathmagicians-4bmj.onrender.com',
-      seesource: 'https://github.com/DianaBeki/math-magicians',
-    },
-    {
-      id: 5,
       src: Meal,
       description: 'The Meal app connects to TheMeal DB API to help users discover various recipes. By smartly organizing information and using technology, the app makes it easy for users to explore and enjoy different meals',
       technologies: ['ReactJS', 'Redux', 'CSS'],
@@ -48,12 +16,44 @@ const Portfolio = () => {
       seesource: 'https://github.com/DianaBeki/meal_point',
     },
     {
-      id: 6,
+      id: 2,
       src: Todolist,
       description: 'The TodoList app is a powerful task management tool designed to enhance productivity and organization.Provides users with a streamlined interface to create, organize, and prioritize tasks efficiently.',
       technologies: ['Webpack', 'Javascript', 'CSS'],
       seelive: 'https://dianabeki.github.io/To-Do-list/dist/',
       seesource: 'https://github.com/DianaBeki/To-Do-list',
+    },
+    {
+      id: 3,
+      src: Mathmagician,
+      description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
+      technologies: ['Reactjs', 'sass', 'HTML', 'CSS'],
+      seelive: 'https://mathmagicians-4bmj.onrender.com',
+      seesource: 'https://github.com/DianaBeki/math-magicians',
+    },
+    {
+      id: 4,
+      src: Fashion,
+      description: 'A fashion week is a Web App bringing together fashion designers, brands, and houses, showcasing their latest collections through mesmerizing runway shows',
+      technologies: ['Javascript', 'HTML', 'CSS'],
+      seelive: 'https://dianabeki.github.io/Fashion-week/',
+      seesource: 'https://github.com/DianaBeki/Fashion-week',
+    },
+    {
+      id: 5,
+      src: Spacehub,
+      description: 'Space Travelers’ Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
+      technologies: ['React', 'Redux', 'Rest API'],
+      seelive: 'https://space-travelers-three.vercel.app/',
+      seesource: 'https://github.com/DianaBeki/space-travelers-hub',
+    },
+    {
+      id: 6,
+      src: Bookstore,
+      description: 'The Bookstore is a React and Redux website that allows users to add a book to the list displays list of books remove a book from the list.',
+      technologies: ['React', 'Redux', 'API'],
+      seelive: 'https://bookstore-f5ng.onrender.com',
+      seesource: 'https://github.com/DianaBeki/bookstore',
     },
   ];
 
@@ -70,13 +70,13 @@ const Portfolio = () => {
   };
 
   return (
-    <div name="portfolio" className="bg-[#001219] w-full pt-[3rem] pb-[5rem]">
+    <div name="portfolio" className="bg-portfolio w-full pt-[3rem] pb-[5rem]">
       <div className="">
         <div className="text-[#f3722cf3] pb-5 md:pb-[5rem] text-center">
-          <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
+          <h2 className="text-2xl italic md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
-        <div className="px-5">
+        <div className="px-3 md:px-5">
           <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {portfolios.map(
               ({
@@ -84,7 +84,7 @@ const Portfolio = () => {
               }) => (
                 <div
                   key={id}
-                  className="shadow-lg shadow-black rounded-lg bg-white lg:duration-500 lg:hover:scale-105 cursor-pointer w-full min-h-[300px]"
+                  className="shadow-lg shadow-[#001219] rounded-lg bg-white lg:duration-500 lg:hover:scale-105 cursor-pointer w-full min-h-[300px]"
                 >
                   <img src={src} alt="projects" className="rounded-md md:pb-3" />
                   <div className="flex flex-col items-center justify-center gap-6">
