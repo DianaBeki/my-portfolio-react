@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div name="contact" className="bg-contact bg-[#001219] pt-[3rem] px-[3rem] pb-[5rem] w-full flex justify-center items-center">
+    <div name="contact" className="bg-contact pt-[3rem] px-[3rem] pb-[5rem] w-full flex justify-center items-center">
       <div className="mx-auto h-full">
         <div className="mb-10">
           <h2 className="text-white md:font-semibold">
