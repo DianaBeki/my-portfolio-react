@@ -89,7 +89,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name="experience" className="bg-tools w-full pb-[2rem] md:pb-[10rem]">
+    <div name="experience" className="bg-tools w-full pb-[2rem] md:pb-[5rem]">
       <div className="flex flex-col justify-center text-white">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl pt-5 md:pt-10">Tools</h2>
