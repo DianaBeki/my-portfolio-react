@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
 const Home = () => (
-  <div name="home" className="bg-home bg-[#001219] px-[1rem] md:px-[2rem] pb-[2rem] lg:pb-[6rem] mx-auto w-full">
+  <div name="home" className="bg-home px-[1rem] md:px-[2rem] pb-[2rem] lg:pb-[6rem] mx-auto w-full">
     <div className="flex flex-col items-center justify-center pt-[9rem] md:pt-[7rem] mx-auto">
       <div className="flex flex-col gap-2 md:gap-4 lg:ml-5">
         <h1 className="text-2xl text-[#f8f9fad2] md:text-5xl lg:text-6xl font-bold mt-2 md:mt-10">
