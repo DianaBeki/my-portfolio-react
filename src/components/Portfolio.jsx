@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Bookstore from '../assets/portfolio/Bookstore.png';
 import Spacehub from '../assets/portfolio/Spacehub.png';
 import Fashion from '../assets/portfolio/Fashion.png';
@@ -58,39 +57,6 @@ const Portfolio = () => {
     },
   ];
 
-  const [startIndex, setStartIndex] = useState(0);
-  const itemsPerPageSmallScreen = 1;
-  const itemsPerPageMediumScreen = 2;
-
-  const getItemsPerPage = () => (window.innerWidth >= 768
-    ? itemsPerPageMediumScreen : itemsPerPageSmallScreen);
-
-  const handlePrev = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - getItemsPerPage());
-    }
-  };
-
-  const handleNext = () => {
-    if (startIndex + getItemsPerPage() < portfolios.length) {
-      setStartIndex(startIndex + getItemsPerPage());
-    }
-  };
-
-  const paginatedportfolios = portfolios.slice(startIndex, startIndex + getItemsPerPage());
-
-  useEffect(() => {
-    const handleResize = () => {
-      setStartIndex(0);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   const handleSeeLiveClick = (liveLink) => {
     if (liveLink) {
       window.open(liveLink, '_blank');
@@ -111,24 +77,14 @@ const Portfolio = () => {
         </div>
 
         <div className="px-5">
-          <div className="flex justify-center items-center gap-[.5rem]">
-            <div className="">
-              <button
-                type="button"
-                onClick={handlePrev}
-                disabled={startIndex === 0}
-                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
-              >
-                &lt;
-              </button>
-            </div>
-            {paginatedportfolios.map(
+          <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {portfolios.map(
               ({
                 id, src, description, technologies, seelive, seesource,
               }) => (
                 <div
                   key={id}
-                  className="shadow-lg shadow-[#001219] rounded-md bg-white lg:duration-500 lg:hover:scale-95 cursor-pointer w-full min-h-[300px]"
+                  className="shadow-lg shadow-black rounded-lg bg-white lg:duration-500 lg:hover:scale-105 cursor-pointer w-full min-h-[300px]"
                 >
                   <img src={src} alt="projects" className="rounded-md md:pb-3" />
                   <div className="flex flex-col items-center justify-center gap-6">
@@ -169,16 +125,6 @@ const Portfolio = () => {
                 </div>
               ),
             )}
-            <div>
-              <button
-                type="button"
-                onClick={handleNext}
-                disabled={startIndex + getItemsPerPage() >= portfolios.length}
-                className="next-btn bg-black text-[#EEE7DA] text-[1rem] disabled:bg-lime-200 disabled:text-black border-2 md:border-4 border-white rounded-[50%] px-4 py-2"
-              >
-                &gt;
-              </button>
-            </div>
           </div>
         </div>
       </div>
