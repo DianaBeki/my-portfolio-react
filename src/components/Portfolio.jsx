@@ -1,4 +1,4 @@
-import Bookstore from '../assets/portfolio/Bookstore.png';
+import doctorAppointment from '../assets/portfolio/doctorAppointment.png';
 import Spacehub from '../assets/portfolio/Spacehub.png';
 import Fashion from '../assets/portfolio/Fashion.png';
 import Mathmagician from '../assets/portfolio/Mathmagician.png';
@@ -25,11 +25,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: Mathmagician,
-      description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
-      technologies: ['Reactjs', 'sass', 'HTML', 'CSS'],
-      seelive: 'https://mathmagicians-4bmj.onrender.com',
-      seesource: 'https://github.com/DianaBeki/math-magicians',
+      src: doctorAppointment,
+      description: 'It is an Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctors appointment reservation.',
+      technologies: ['React', 'Redux', 'Tailwind'],
+      seelive: 'https://doctor-appointment-eqlq.onrender.com/',
+      seesource: 'https://github.com/DianaBeki/Final-capstone-Frontend',
     },
     {
       id: 4,
@@ -41,20 +41,21 @@ const Portfolio = () => {
     },
     {
       id: 5,
+      src: Mathmagician,
+      description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
+      technologies: ['Reactjs', 'sass', 'HTML', 'CSS'],
+      seelive: 'https://mathmagicians-4bmj.onrender.com',
+      seesource: 'https://github.com/DianaBeki/math-magicians',
+    },
+    {
+      id: 6,
       src: Spacehub,
       description: 'Space Travelers’ Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
       technologies: ['React', 'Redux', 'Rest API'],
       seelive: 'https://space-travelers-three.vercel.app/',
       seesource: 'https://github.com/DianaBeki/space-travelers-hub',
     },
-    {
-      id: 6,
-      src: Bookstore,
-      description: 'The Bookstore is a React and Redux website that allows users to add a book to the list displays list of books remove a book from the list.',
-      technologies: ['React', 'Redux', 'API'],
-      seelive: 'https://bookstore-f5ng.onrender.com',
-      seesource: 'https://github.com/DianaBeki/bookstore',
-    },
+
   ];
 
   const handleSeeLiveClick = (liveLink) => {
