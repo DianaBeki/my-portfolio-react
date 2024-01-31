@@ -55,7 +55,6 @@ const Portfolio = () => {
       seelive: 'https://space-travelers-three.vercel.app/',
       seesource: 'https://github.com/DianaBeki/space-travelers-hub',
     },
-
   ];
 
   const handleSeeLiveClick = (liveLink) => {
