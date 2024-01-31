@@ -3,7 +3,7 @@ import Spacehub from '../assets/portfolio/Spacehub.png';
 import Fashion from '../assets/portfolio/Fashion.png';
 import Mathmagician from '../assets/portfolio/Mathmagician.png';
 import Meal from '../assets/portfolio/meal.png';
-import Todolist from '../assets/portfolio/Todolist.png';
+import carhub from '../assets/portfolio/carhub.png';
 
 const Portfolio = () => {
   const portfolios = [
@@ -17,16 +17,16 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: Todolist,
-      description: 'The TodoList app is a powerful task management tool designed to enhance productivity and organization.Provides users with a streamlined interface to create, organize, and prioritize tasks efficiently.',
-      technologies: ['Webpack', 'Javascript', 'CSS'],
-      seelive: 'https://dianabeki.github.io/To-Do-list/dist/',
-      seesource: 'https://github.com/DianaBeki/To-Do-list',
+      src: carhub,
+      description: 'AutoHub Connect is a friendly website created to be your main place for easy car rentals Users have smooth experiences from booking a car to returning it after the journey',
+      technologies: ['ReactJS', 'Tailwind', 'CSS'],
+      seelive: 'https://resplendent-cendol-4ed660.netlify.app/',
+      seesource: 'https://github.com/DianaBeki/AutoHub-Connect',
     },
     {
       id: 3,
       src: doctorAppointment,
-      description: 'It is an Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctors appointment reservation.',
+      description: 'An Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctors appointment reservation.',
       technologies: ['React', 'Redux', 'Tailwind'],
       seelive: 'https://doctor-appointment-eqlq.onrender.com/',
       seesource: 'https://github.com/DianaBeki/Final-capstone-Frontend',
@@ -42,7 +42,7 @@ const Portfolio = () => {
     {
       id: 5,
       src: Mathmagician,
-      description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
+      description: 'Math magicians is a Single Page App (SPA) that allows users to Make simple calculations. Read a random math-related quote',
       technologies: ['Reactjs', 'sass', 'HTML', 'CSS'],
       seelive: 'https://mathmagicians-4bmj.onrender.com',
       seesource: 'https://github.com/DianaBeki/math-magicians',
