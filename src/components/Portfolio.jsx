@@ -74,7 +74,7 @@ const Portfolio = () => {
     <div name="portfolio" className="bg-portfolio w-full pt-[3rem] pb-[5rem]">
       <div className="">
         <div className="text-[#f3722cf3] pb-5 md:pb-[5rem] text-center">
-          <h2 className="text-2xl italic md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
+          <h2 className="text-2xl md:text-5xl font-bold md:inline md:border-b-4 border-white">My Recent Projects</h2>
         </div>
 
         <div className="px-3 md:px-5">
