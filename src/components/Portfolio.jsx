@@ -26,7 +26,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: doctorAppointment,
-      description: 'An Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctors appointment reservation.',
+      description: 'An Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctors appointment reservation',
       technologies: ['React', 'Redux', 'Tailwind'],
       seelive: 'https://doctor-appointment-eqlq.onrender.com/',
       seesource: 'https://github.com/DianaBeki/Final-capstone-Frontend',
@@ -50,7 +50,7 @@ const Portfolio = () => {
     {
       id: 6,
       src: Spacehub,
-      description: 'Space Travelers’ Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
+      description: 'Space Travelers Hub is a dynamic single-page web app connecting users to comprehensive rocket and mission data from SpaceX',
       technologies: ['React', 'Redux', 'Rest API'],
       seelive: 'https://space-travelers-three.vercel.app/',
       seesource: 'https://github.com/DianaBeki/space-travelers-hub',
